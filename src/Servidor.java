@@ -18,8 +18,9 @@ public class Servidor {
 			System.out.println("Servidor iniciado!");
 			
 			while(true) {
-				Socket socket = srv.accept();
 				System.out.println("Aguardando cliente...");
+				Socket socket = srv.accept();
+				
 				ObjectInputStream entrada = new ObjectInputStream(socket.getInputStream()); 
 				ObjectOutputStream saida;
 				

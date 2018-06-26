@@ -1,5 +1,7 @@
+import java.io.Serializable;
 
-public class Senha {
+
+public class Senha implements Serializable{
 	
 	private String tipo;
 	private int prioridade;
